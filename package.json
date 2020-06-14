@@ -1,5 +1,5 @@
 {
-  "name": "slugify",
+  "name": "@binance-academy/slugify",
   "version": "1.0.0",
   "description": "Create a slug from a string",
   "main": "build/index.js",
