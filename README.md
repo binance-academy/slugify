@@ -1,11 +1,11 @@
-## How to use
+## Install
 
-- Click on `Use this template`.
-- Replace the `hello` function by your code.
-- Run `yarn build`
+`yarn add @binance-academy/slugify`
+`npm i @binance-academy/slugify`
 
-If you want to create a React JS lib :
+## Use
 
-- Add `React` as a dev and peer deps.
-- Add `@babel/preset-react` as a devDeps.
-- Add `eslint-plugin-react` as a devDeps.
+```
+import slugify from "@binance-academy/slugify";
+const slug = slugify("aaaa---$%#") // Output : aaaa
+```
