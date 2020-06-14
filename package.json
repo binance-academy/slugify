@@ -4,14 +4,21 @@
   "description": "Create a slug from a string",
   "main": "build/index.js",
   "scripts": {
-    "build": "babel ./src --out-dir ./build -s inline",
-    "watch": "babel ./src --out-dir ./build -s inline -w",
+    "build": "rm -rf ./build && webpack",
+    "dev": "webpack --watch",
     "test": "NODE_ENV=test jest '/tests/(.*).test.js' --colors",
     "lint": "eslint src/** tests/**",
     "pack": "npm pack",
     "prepublishOnly": "yarn build"
   },
-  "author": "Brykou",
+  "author": "Binance Academy <academy@binance.com> (https://academy.binance.com/)",
+  "contributors": [
+    "Brykou"
+  ],
+  "bugs": {
+    "url": "https://github.com/Binance-Academy/slugify/issues"
+  },
+  "homepage": "https://github.com/Binance-Academy/slugify#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Binance-Academy/slugify.git"
@@ -22,13 +29,15 @@
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
     "babel-eslint": "^10.1.0",
-    "babel-preset-minify": "^0.5.1",
+    "babel-loader": "^8.1.0",
     "eslint": "^7.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-prettier": "^3.1.3",
     "jest": "^26.0.1",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
   },
   "files": [
     "build/*"
