@@ -1,6 +1,6 @@
 {
   "name": "@binance-academy/slugify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create a slug from a string",
   "main": "build/index.js",
   "scripts": {
@@ -13,7 +13,8 @@
   },
   "author": "Binance Academy <academy@binance.com> (https://academy.binance.com/)",
   "contributors": [
-    "Brykou"
+    "Brykou",
+    "robiiinos"
   ],
   "bugs": {
     "url": "https://github.com/Binance-Academy/slugify/issues"
@@ -33,7 +34,6 @@
     "eslint": "^7.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.21.2",
-    "eslint-plugin-prettier": "^3.1.3",
     "jest": "^26.0.1",
     "prettier": "^2.0.5",
     "webpack": "^4.43.0",
