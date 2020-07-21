@@ -1,18 +1,11 @@
-name: Test
+name: Lint
 
 on: [push, pull_request]
 
 jobs:
-  test:
+  lint:
 
     runs-on: ubuntu-latest
-
-    strategy:
-      fail-fast: true
-      matrix:
-        node: [12.x, 14.x]
-
-    name: Node v${{ matrix.node }}
 
     steps:
       - name: Checkout code
@@ -21,10 +14,10 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-            node-version: ${{ matrix.node }}
+            node-version: 12.x
 
       - name: Install dependencies
         run: yarn install
 
-      - name: Run tests
-        run: yarn test
+      - name: Run ESLint
+        run: yarn lint

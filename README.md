@@ -1,8 +1,9 @@
 # slugify
 
 [![Version](https://img.shields.io/npm/v/@binance-academy/slugify.svg?style=flat-square)](https://www.npmjs.com/package/@binance-academy/slugify)
+[![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/binance-academy/slugify/Test/master?style=flat-square)](https://github.com/binance-academy/slugify/actions?query=workflow%3ATest)
 [![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@binance-academy/slugify.svg?color=yellow&style=flat-square)](https://bundlephobia.com/result?p=@binance-academy/slugify)
-[![Downloads](https://img.shields.io/npm/dm/@binance-academy/slugify.svg?style=flat-square)](https://www.npmjs.com/package/@binance-academy/slugify)
+[![Downloads](https://img.shields.io/npm/dm/@binance-academy/slugify.svg?color=green&style=flat-square)](https://www.npmjs.com/package/@binance-academy/slugify)
 [![CodeStyle](https://img.shields.io/badge/code%20style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 Generate a slug from a string.
